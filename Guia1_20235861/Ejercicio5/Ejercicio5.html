@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formula 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+          },
+          extend: {
+            colors: {
+              papaya: 'hsl(30, 100%, 50%)',
+              strongCyan: 'hsl(200, 100%, 30%)',
+              cyan: 'hsl(191, 100%, 70%)',
+              carbonBlack: 'hsl(0, 0%, 11%)',
+              grayishBlue: 'hsl(0, 0%, 63%)',
+              darkBlue: 'hsl(210, 25%, 30%)',
+            },
+            fontFamily: {
+              sans: ['Bai Jamjuree', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+  background-image: 
+    url('../images/3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+      @media (max-width: 576px) {
+        body {
+          background-image: url('../images/3.png');
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Primera -->
+    <section id="principal">
+      <div class="max-w-6xl mx-auto text-center px-10 mb-40 pt-16">
+        <img src="../images/McLaren_Racing_logo.png" alt="" class="mx-auto my-16" />
+        <h3 class="mb-10 text-8xl font-bold text-white md:text-6xl">Nuestra Historia</h3>
+        <p class="max-w-8xl mx-auto leading-9 text-center text-darkBlue mb-10 text-2xl">
+          La historia de McLaren se remonta a 1963, cuando el piloto neozelandés Bruce McLaren fundó la escudería McLaren Racing Limited. La sede de la escudería se encuentra en Woking, Inglaterra. 
+        </p>
+        <img src="../images/carro.png" alt="" class="mx-auto"/>
+      </div>
+    </section>
+
+
+<!-- Pilotos -->
+<section id="pilotos">
+  <div class="max-w-6xl mx-auto text-center px-10 my-20">
+    <h3 class="mb-8 text-5xl font-bold text-darkBlue md:text-5xl">Los pilotos de McLaren 2025</h3>  
+  </div>
+
+  <!-- Tarjetas de pilotos -->
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <!-- Lando Norris -->
+    <section id="lando" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+      <div class="bg-gray-50 rounded-xl border-8 border-papaya text-darkBlue text-center flex flex-col p-8 h-full">
+        <div class="flex-grow p-8">
+          <div class="uppercase text-2xl font-bold">Lando Norris</div>
+          <img src="../images/lando.png" alt="" class="mx-auto w-48 h-48 object-cover rounded-full mb-4"/> 
+          <div class="border-t border-cyan mb-4"></div>
+          <div class="space-y-2">
+            <div class="flex justify-center">
+              <span class="ml-1 text-sm leading-7 text-darkBlue">
+                Norris nació en la ciudad inglesa de Bristol en el año 1999. 
+                Su carrera deportiva comenzó en el karting, disciplina en la que se inició con siete años y donde cosechó éxitos de categoría mundial.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oscar Piastri -->
+    <section id="piastri" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+      <div class="bg-gray-50 rounded-xl border-8 border-papaya text-darkBlue text-center flex flex-col p-8 h-full">
+        <div class="flex-grow p-8">
+          <div class="uppercase text-2xl font-bold">Oscar Piastri</div>
+          <img src="../images/piastri.png" alt="" class="mx-auto w-48 h-48 object-cover rounded-full mb-4"/> 
+          <div class="border-t border-cyan mb-4"></div>
+          <div class="space-y-2">
+            <div class="flex justify-center">
+              <span class="ml-1 text-sm leading-7 text-darkBlue">
+                Oscar Piastri es un piloto de Fórmula 1 australiano que corre para el equipo McLaren. 
+                Nació el 6 de abril de 2001 en Melbourne, Victoria, Australia.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+    <!-- Galeria-->
+    <div class="flex items-center justify-center min-h-screen">
+      <!-- Card Container -->
+    <div class="bg-white p-6 m-3 space-y-10 shadow-2x1 rounded-3x1 md:p-40">
+    <section id="access">
+      <div class="max-w-6xl mx-auto text-center px-10 my-20">
+        <h3 class="mb-8 text-4xl font-bold text-darkBlue md:text-5xl">Galeria de Mclaren</h3>
+      </div>
+      <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <!-- Foto 1 -->
+        <div class="relative group">
+          <img src="../images/gale1.jpeg" alt="" class="w-full h-64 object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+            <div class="flex justify-between w-full">
+              <div class="font-normal">
+                <p class="text-sm">Formula 1</p>
+              </div>
+              <div class="flex items-center">
+                <img src="../images/bookmark.svg" alt="bookmark" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- foto 2 -->
+        <div class="relative group">
+          <img src="../images/gale2.webp" alt="" class="w-full h-64 object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+            <div class="flex justify-between w-full">
+              <div class="font-normal">
+                <p class="text-sm">Indycar</p>
+              </div>
+              <div class="flex items-center">
+                <img src="../images/bookmark.svg" alt="bookmark" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- foto 3 -->
+        <div class="relative group">
+          <img src="../images/gale3.webp" alt="" class="w-full h-64 object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+            <div class="flex justify-between w-full">
+              <div class="font-normal">
+                <p class="text-sm">FormulaE</p>
+              </div>
+              <div class="flex items-center">
+                <img src="../images/bookmark.svg" alt="bookmark" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- foto 4 -->
+        <div class="relative group">
+          <img src="../images/gale4.webp" alt="" class="w-full h-64 object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+            <div class="flex justify-between w-full">
+              <div class="font-normal">
+                <p class="text-sm">Extreme E</p>
+              </div>
+              <div class="flex items-center">
+                <img src="../images/bookmark.svg" alt="bookmark" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- foto 5 -->
+        <div class="relative group">
+          <img src="../images/gale5.jpeg" alt="" class="w-full h-64 object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+            <div class="flex justify-between w-full">
+              <div class="font-normal">
+                <p class="text-sm">Gaming</p>
+              </div>
+              <div class="flex items-center">
+                <img src="../images/bookmark.svg" alt="bookmark" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- foto 6 -->
+        <div class="relative group">
+          <img src="../images/gale6.jpeg" alt="" class="w-full h-64 object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+            <div class="flex justify-between w-full">
+              <div class="font-normal">
+                <p class="text-sm">Race</p>
+              </div>
+              <div class="flex items-center">
+                <img src="../images/bookmark.svg" alt="bookmark" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- foto 7 -->
+        <div class="relative group">
+          <img src="../images/gale7.jpeg" alt="" class="w-full h-64 object-cover" />
+          <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+            <div class="flex justify-between w-full">
+              <div class="font-normal">
+                <p class="text-sm">Car</p>
+              </div>
+              <div class="flex items-center">
+                <img src="../images/bookmark.svg" alt="bookmark" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+
+    <!-- cards -->
+    <section id="drivers" class="py-12">
+      <div class="flex gap-0 h-[600px]">
+    
+        <div class="bg-darkBlue p-6 relative w-1/2 h-full">
+          <h3 class="text-5xl font-bold text-papaya">McLaren Family</h3>
+          <img src="../images/family.jpeg" alt="McLaren Family" class="absolute bottom-0 right-0 w-[600px] h-[500px] object-cover " />
+        </div>
+    
+        <div class="bg-papaya p-6 relative w-1/2 h-full">
+          <h3 class="text-5xl font-bold text-darkBlue">McLaren Merch</h3>
+          <img src="../images/merch.jpeg" alt="McLaren Merch" class="absolute bottom-0 right-0 w-[600px] h-[500px] object-cover " />
+        </div>
+        </div>
+        </section>
+        </div>
+        </div>
+        <!-- Footer -->
+  <footer class="bg-papaya py-6">
+    <div class="container mx-auto px-4 text-center text-white">
+      <p>&copy; 2025 McLaren Racing. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
