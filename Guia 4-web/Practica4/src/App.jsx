@@ -3,8 +3,8 @@ import'./index.css'
 import { useContext } from 'react'
 import { BudgetStateContext } from './context/BudgetContext'
 import { BudgetTracker } from './components/BudgetTracker'
-import ExpenseModal from './components/ExpenseModal'
 import ExpenseList from './components/ExpenseList'
+import ExpenseModal from './components/ExpenseModal'
 
 
 

@@ -4,7 +4,7 @@ import { ExpenseDetails } from "./ExpenseDetails";
 
 export const ExpenseList = () => {
 
-    const {expenses} = useContext(BudgetStateContext); // leyendo expenses desde el contexto
+    const {expenses} = useContext(BudgetStateContext); 
     const isEmpty= expenses.length===0
 
     return (
