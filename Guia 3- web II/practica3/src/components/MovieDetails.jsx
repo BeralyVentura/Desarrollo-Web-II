@@ -76,7 +76,7 @@ selectedId)?.userRating;
                             <h2>{title}</h2>
                             <p>{released} &bull; {runtime}</p>
                             <p>{genre}</p>
-    `                        <p><span>⭐</span>{imdbRating} IMDB rating</p>
+                            <p><span>⭐</span>{imdbRating} IMDB rating</p>
                         </div>
                     </header>
                     <section>
